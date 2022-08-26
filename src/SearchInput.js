@@ -14,10 +14,7 @@ class SearchInput extends React.Component {
     }
 
     onInputChange(event) {
-        // if (event.key === 'Enter') 
             this.setState({entry: event.target.value})
-            // this.props.onSearchSubmit(event.target.value)
-        //   }
         }
         onFormSubmit = (event) => {
                 event.preventDefault();
@@ -34,8 +31,6 @@ class SearchInput extends React.Component {
                         <div className='ui massive icon input'>
                             <input type="text" placeholder='Image search engine, search here .....'
                                 onChange={this.onInputChange}
-                                // onChange={(event)=> 
-                                //     this.state({entry: event.target.value})}
                                 value = {this.state.entry}
                             ></input>
                             <i className='search icon'></i>
